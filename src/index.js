@@ -1,3 +1,6 @@
-const helloDiv = document.createElement('div');
-helloDiv.innerHTML = "Here, you will find all things EVBP-related. Take some time and have a look around!";
-document.body.append(helloDiv);
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<h1>Here is an H1 tag</h1>);
