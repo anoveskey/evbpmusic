@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Greeting = () => (
+interface GreetingProp {
+    name?: string;
+}
+
+const Greeting = ({ name }: GreetingProp) => (
     <p>
-        Here is a greeting paragraph that I made just for fun.
+        {name ? `${name}, ` : null} Here is a greeting paragraph that I made just for fun.
     </p>
 );
 
