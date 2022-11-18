@@ -1,0 +1,12 @@
+.my-greeting {
+    color: darkorange;
+    font-family: "Comic Sans MS";
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 320px) {
+    .my-greeting {
+        color: aqua;
+        font-size: 8px;
+    }
+}
