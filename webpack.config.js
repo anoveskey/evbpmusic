@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devServer: {
+        historyApiFallback: true,
         static: {
             directory: path.join(__dirname, "build"),
-        },port: 3000,
+        },
+        port: 3000,
     },
     entry: "./src/index.js",
     mode: 'development',
@@ -33,6 +35,7 @@ module.exports = {
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "build"),
+        publicPath: '/',
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -1,9 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Greeting from "./components/greeting";
+import App from "./App";
 import './index.css';
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<Greeting name="Adam" />);
+root.render(<App />);
 
