@@ -7,7 +7,7 @@ interface GreetingProp {
 
 const Greeting = ({ name }: GreetingProp) => (
     <p className="my-greeting">
-        {name ? `${name}, ` : null} Here is a greeting paragraph that I made just for fun.
+        {name ? `${name}, ` : null} {name ? `h` : `H`}ere is a greeting paragraph that I made just for fun.
     </p>
 );
 
