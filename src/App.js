@@ -6,11 +6,12 @@ import {
     useRoutes,
 } from 'react-router-dom';
 import Greeting from './components/greeting';
+import Discography from './containers/discography';
 
 const App = () => {
     let routes = useRoutes([
         { path: "/", element: <Greeting />},
-        { path: "discography", element: <Greeting name="discography" />},
+        { path: "discography", element: <Discography />},
         { path: "shows", element: <Greeting name="shows" />},
         { path: "*", element: <Greeting name="404" />},
     ]);
